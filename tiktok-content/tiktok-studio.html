@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎬 TikTok Content Studio — Day 1 to Day 3 (Brave Browser Edition)</title>
+  <style>
+    :root {
+      --bg: #070b14;
+      --card: #0f172a;
+      --border: #1e293b;
+      --cyan: #06b6d4;
+      --red: #f43f5e;
+      --green: #10b981;
+      --amber: #f59e0b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Padauk', 'Noto Sans Myanmar', system-ui, -apple-system, sans-serif;
+      line-height: 1.7;
+      padding: 32px 20px 80px;
+    }
+    .container { max-width: 1280px; margin: 0 auto; }
+    header {
+      text-align: center;
+      padding: 28px;
+      background: linear-gradient(135deg, rgba(6,182,212,0.12), rgba(244,63,94,0.12));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      margin-bottom: 36px;
+    }
+    header h1 { font-size: 28px; color: #38bdf8; margin-bottom: 8px; }
+    header p { color: var(--muted); font-size: 15px; }
+    .day-section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .day-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    .day-badge {
+      background: linear-gradient(90deg, #06b6d4, #3b82f6);
+      color: #000;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+    .day-title { font-size: 22px; font-weight: 700; color: #fff; }
+    .slides-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+    .slide-card {
+      background: #090d16;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .slide-card img {
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      object-fit: cover;
+      border-bottom: 1px solid #1e293b;
+    }
+    .slide-meta {
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .slide-label {
+      font-size: 14px;
+      font-weight: 700;
+      color: #38bdf8;
+    }
+    .slide-desc {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      border: none;
+      transition: all 0.2s;
+    }
+    .btn-download {
+      background: #1e293b;
+      color: #38bdf8;
+      border: 1px solid #334155;
+    }
+    .btn-download:hover { background: #0284c7; color: #fff; }
+    .btn-copy {
+      background: linear-gradient(90deg, #10b981, #059669);
+      color: #fff;
+    }
+    .btn-copy:hover { opacity: 0.92; transform: translateY(-1px); }
+    .content-box {
+      background: #060911;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 16px;
+    }
+    .content-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .content-header h3 { font-size: 16px; color: #f59e0b; }
+    pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: 'Padauk', 'Noto Sans Myanmar', monospace;
+      font-size: 14.5px;
+      color: #e2e8f0;
+      line-height: 1.85;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎬 TikTok Content Pack — Day 001 မှ Day 003 အထိ</h1>
+      <p>ပုံ (၃) ပုံစီ (9:16 Vertical TikTok Format) + မြန်မာလို Caption အပြည့်အစုံ + Voiceover Script များ (Brave Browser မှ တိုက်ရိုက် Download / Copy ကူးယူနိုင်ပါသည်)</p>
+    </header>
+
+    <!-- DAY 001 -->
+    <section class="day-section">
+      <div class="day-header">
+        <div>
+          <span class="day-badge">DAY 001 / 100</span>
+          <h2 class="day-title" style="margin-top:8px;">🔥 Anatomy of a Real Server Attack — Recon & Info Disclosure</h2>
+        </div>
+      </div>
+
+      <div class="slides-grid">
+        <div class="slide-card">
+          <img src="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day1_slide1_recon_1793380751026.jpg" alt="Day 1 Slide 1" />
+          <div class="slide-meta">
+            <div class="slide-label">ပုံ (၁) — Red Team Recon (curl -I)</div>
+            <div class="slide-desc">Hacker က curl -I နဲ့ Server ရဲ့ Nginx Version အတိအကျကို ထောက်လှမ်းပုံ</div>
+            <a class="btn btn-download" href="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day1_slide1_recon_1793380751026.jpg" download="Day1-Slide1-Recon.jpg">⬇️ Download ပုံ (၁)</a>
+          </div>
+        </div>
+
+        <div class="slide-card">
+          <img src="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day1_slide2_cookie_encryption_1793380774565.jpg" alt="Day 1 Slide 2" />
+          <div class="slide-meta">
+            <div class="slide-label">ပုံ (၂) — Laravel Cookie Encryption</div>
+            <div class="slide-desc">AES-256-CBC + HMAC-SHA256 နဲ့ APP_KEY က Cookie ကို ကာကွယ်ထားပုံ</div>
+            <a class="btn btn-download" href="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day1_slide2_cookie_encryption_1793380774565.jpg" download="Day1-Slide2-Cookie-Encryption.jpg">⬇️ Download ပုံ (၂)</a>
+          </div>
+        </div>
+
+        <div class="slide-card">
+          <img src="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day1_slide3_nginx_defense_1793380814735.jpg" alt="Day 1 Slide 3" />
+          <div class="slide-meta">
+            <div class="slide-label">ပုံ (၃) — Blue Team Fix (server_tokens off)</div>
+            <div class="slide-desc">Nginx မှာ server_tokens off; ထည့်ပြီး Version ဖျောက်ပစ်ပုံ</div>
+            <a class="btn btn-download" href="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day1_slide3_nginx_defense_1793380814735.jpg" download="Day1-Slide3-Nginx-Fix.jpg">⬇️ Download ပုံ (၃)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-box">
+        <div class="content-header">
+          <h3>📋 Day 001 TikTok Caption (မြန်မာလို အပြည့်အစုံ)</h3>
+          <button class="btn btn-copy" onclick="copyText('caption-day1', this)">📋 Copy Caption</button>
+        </div>
+        <pre id="caption-day1">🛡️ 100 Days of Cybersecurity & DevSecOps — Day 1/100 🚀
+
+Hacker တစ်ယောက်က မင်းရဲ့ Website သို့မဟုတ် Server ကို စတိုက်ခိုက်တော့မယ်ဆိုရင် ပထမဆုံး ဘာလုပ်တယ်ထင်လဲ? 🤔
+
+အဖြေကတော့ "Reconnaissance (ထောက်လှမ်းခြင်း)" ပါပဲ!
+
+🔴 1. The Attack (ပုံ - ၁)
+Terminal ကနေ `curl -I https://yourwebsite.com` ဆိုပြီး ရိုးရိုးလေး လှမ်းမေးလိုက်ရုံနဲ့ Server က `Server: nginx/1.26.3 (Ubuntu)` ဆိုပြီး သူသုံးထားတဲ့ OS နဲ့ Version အတိအကျကို ပြန်ပြောပြနေတတ်ပါတယ်။
+ဒါကို "Banner Grabbing / Information Disclosure" လို့ ခေါ်ပါတယ်။ Hacker က Version အတိအကျ သိသွားရင် အဲ့ဒီ Version မှာရှိတဲ့ CVE ဟာကွက်အတိုင်း အလွယ်တကူ တိုက်ခိုက်နိုင်သွားပါပြီ!
+
+🔐 2. Laravel Cookie Under the Hood (ပုံ - ၂)
+Response Header ထဲမှာ ပါလာတဲ့ Laravel Session Cookie ကို Base64 ဖြည်ကြည့်လိုက်ရင် `iv`, `value`, `mac` ဆိုပြီး ၃ ပိုင်း တွေ့ရပါတယ်။
+Laravel က Cookie ကို `AES-256-CBC` နဲ့ Encrypt လုပ်ထားသလို `HMAC-SHA256` နဲ့ တံဆိပ်ခတ်ထားလို့ Server ပေါ်က `.env` ထဲက `APP_KEY` မပေါက်ကြားသရွေ့ Hacker က Cookie ကို လုံးဝ ပြင်လို့/ဖတ်လို့ မရပါဘူး! (ဒါကြောင့် APP_KEY ကို အသက်လို ကာကွယ်ပါ!)
+
+🔵 3. The 1-Line Fix (ပုံ - ၃)
+ကိုယ့် Server ရဲ့ Nginx Version ကို Hacker မမြင်ရအောင် `/etc/nginx/nginx.conf` ထဲမှာ ဒီတစ်ကြောင်းလေးပဲ ထည့်ပေးရုံပါပဲ—
+👉 `server_tokens off;`
+
+Nginx ကို reload လုပ်ပြီး ပြန်စစ်ကြည့်လိုက်ရင် Version နံပါတ် လုံးဝ ပျောက်သွားပြီး `Server: nginx` လို့ပဲ ထွက်ပါတော့တယ်! ✅
+
+မနက်ဖြန် Day 2 မှာ Browser Security Headers တွေနဲ့ Cookie Flags (`HttpOnly`, `Secure`, `SameSite`) အကြောင်း လက်တွေ့ ဆက်စမ်းပြပါမယ်။ Follow လုပ်ထားကြနော် သားကြီးတို့! 🔥
+
+#cybersecurity #devsecops #webdeveloper #laravel #nginx #linux #myanmartech #100daysofcybersecurity #ethicalhacking #codingmyanmar</pre>
+      </div>
+    </section>
+
+    <!-- DAY 002 -->
+    <section class="day-section">
+      <div class="day-header">
+        <div>
+          <span class="day-badge">DAY 002 / 100</span>
+          <h2 class="day-title" style="margin-top:8px;">🔥 HTTP Security Headers, Clickjacking & Cookie Security Flags</h2>
+        </div>
+      </div>
+
+      <div class="slides-grid">
+        <div class="slide-card">
+          <img src="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day2_slide1_clickjacking_1793380747901.jpg" alt="Day 2 Slide 1" />
+          <div class="slide-meta">
+            <div class="slide-label">ပုံ (၁) — Clickjacking Attack</div>
+            <div class="slide-desc">အကြည်ရောင် iframe ထပ်ပြီး User ကို မသိဘဲ ခလုတ်မှားနှိပ်ခိုင်းပုံ</div>
+            <a class="btn btn-download" href="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day2_slide1_clickjacking_1793380747901.jpg" download="Day2-Slide1-Clickjacking.jpg">⬇️ Download ပုံ (၁)</a>
+          </div>
+        </div>
+
+        <div class="slide-card">
+          <img src="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day2_slide2_security_headers_1793380775611.jpg" alt="Day 2 Slide 2" />
+          <div class="slide-meta">
+            <div class="slide-label">ပုံ (၂) — 5 Security Header Shields</div>
+            <div class="slide-desc">X-Frame-Options, HSTS, nosniff, Referrer-Policy နဲ့ CSP ဒိုင်း ၅ ချပ်</div>
+            <a class="btn btn-download" href="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day2_slide2_security_headers_1793380775611.jpg" download="Day2-Slide2-Security-Headers.jpg">⬇️ Download ပုံ (၂)</a>
+          </div>
+        </div>
+
+        <div class="slide-card">
+          <img src="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day2_slide3_cookie_flags_1793380802818.jpg" alt="Day 2 Slide 3" />
+          <div class="slide-meta">
+            <div class="slide-label">ပုံ (၃) — 3 Cookie Security Flags</div>
+            <div class="slide-desc">HttpOnly, Secure နဲ့ SameSite=Lax သော့ ၃ ချောင်း</div>
+            <a class="btn btn-download" href="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day2_slide3_cookie_flags_1793380802818.jpg" download="Day2-Slide3-Cookie-Flags.jpg">⬇️ Download ပုံ (၃)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-box">
+        <div class="content-header">
+          <h3>📋 Day 002 TikTok Caption (မြန်မာလို အပြည့်အစုံ)</h3>
+          <button class="btn btn-copy" onclick="copyText('caption-day2', this)">📋 Copy Caption</button>
+        </div>
+        <pre id="caption-day2">🛡️ 100 Days of Cybersecurity & DevSecOps — Day 2/100 🚀
+
+မင်းရဲ့ Website က HTTPS (အစိမ်းရောင် သော့ခလောက်လေး) ပါနေရုံနဲ့ လုံခြုံပြီလို့ ထင်နေလား? 😱
+HTTP Security Headers တွေ မပါရင် Hacker က User ရဲ့ Browser ကို အလွယ်တကူ လှည့်စားလို့ရပါတယ်!
+
+🔴 1. Clickjacking Attack ဆိုတာ ဘာလဲ? (ပုံ - ၁)
+Hacker က "iPhone ကံစမ်းမဲ နှိပ်ရန်" ဆိုတဲ့ အတု Page တစ်ခု ဆောက်ပြီး အပေါ်မှာ မင်းရဲ့ Website သို့မဟုတ် Admin Panel ကို အကြည်ရောင် (`opacity: 0`) `<iframe>` နဲ့ ထပ်ထားလိုက်ပါတယ်။
+User က ဆုမဲခလုတ်ကို နှိပ်လိုက်ပေမယ့် တကယ်တမ်း နောက်ကွယ်က မင်းရဲ့ Website ထဲက "Delete Account" သို့မဟုတ် "Confirm Transfer" ခလုတ်ကို နှိပ်မိသွားတာမျိုးပါ!
+
+🔵 2. မဖြစ်မနေ တပ်ဆင်ရမည့် Security Header ဒိုင်း (၅) ချပ် (ပုံ - ၂)
+ကိုယ့်ရဲ့ Production Server (Nginx) ကို Python Audit Script နဲ့ စစ်ဆေးပြီး ဒီ Header တွေ ထည့်သွင်းခဲ့ပါတယ်—
+✅ `X-Frame-Options: SAMEORIGIN` -> သူများ ဆိုဒ်က ကိုယ့်ဆိုဒ်ကို iframe ထဲ ထည့်မရအောင် ပိတ်သည် (Clickjacking ကာကွယ်သည်)
+✅ `X-Content-Type-Options: nosniff` -> ပုံ (.jpg) အယောင်ဆောင်ထားတဲ့ Hacker JS/HTML ဖိုင်တွေကို Browser က မRun အောင် တားသည်
+✅ `Strict-Transport-Security (HSTS)` -> Browser ကို HTTP လုံးဝမသုံးဘဲ HTTPS အမြဲသုံးရန် အမိန့်ပေးသည်
+✅ `Referrer-Policy` -> Link နှိပ်သွားချိန် URL အပြည့်အစုံ မပေါက်ကြားအောင် ထိန်းသည်
+✅ `Content-Security-Policy (CSP)` -> XSS script များ မRun နိုင်အောင် ကာကွယ်သည်
+
+🍪 3. Cookie Security Flags ၃ ခု (ပုံ - ၃)
+User Login ဝင်ထားတဲ့ Session Cookie မှာ ဒီ Flag ၃ ခု ပါ/မပါ အမြဲစစ်ပါ—
+🔒 `HttpOnly` -> JavaScript (`document.cookie`) ကနေ Cookie ခိုးယူ၍ လုံးဝမရအောင် ပိတ်သည်
+🔒 `Secure` -> HTTPS လိုင်းပေါ်ကသာ Cookie ပို့ဆောင်မည်
+🔒 `SameSite=Lax` -> တခြား ဆိုဒ်ကနေ လှမ်းတိုက်ခိုက်တဲ့ CSRF Attack ကို ကာကွယ်သည်
+
+ကိုယ့် Website မှာရော ဒီ Header တွေ ပါပြီလား? Day 3 မှာ Hacker တွေ နောက်ကွယ်က ဝှက်ထားတဲ့ `dev` နဲ့ `staging` Subdomain တွေကို ဘယ်လို ရှာဖွေဖောက်ထွင်းသလဲ ဆက်ပြပေးပါမယ်! 🔥
+
+#cybersecurity #devsecops #websecurity #laravel #nginx #clickjacking #infosec #myanmartech #100daysofcybersecurity #webdeveloper</pre>
+      </div>
+    </section>
+
+    <!-- DAY 003 -->
+    <section class="day-section">
+      <div class="day-header">
+        <div>
+          <span class="day-badge">DAY 003 / 100</span>
+          <h2 class="day-title" style="margin-top:8px;">🔥 Subdomain Hunting & The `APP_DEBUG=true` / `APP_ENV=local` Trap</h2>
+        </div>
+      </div>
+
+      <div class="slides-grid">
+        <div class="slide-card">
+          <img src="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day3_slide1_subdomain_recon_1793380748884.jpg" alt="Day 3 Slide 1" />
+          <div class="slide-meta">
+            <div class="slide-label">ပုံ (၁) — Hidden Subdomain Recon</div>
+            <div class="slide-desc">Main site လုံခြုံပေမယ့် နောက်ကွယ်က dev-api, staging, dev-cp ကို ရှာတွေ့သွားပုံ</div>
+            <a class="btn btn-download" href="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day3_slide1_subdomain_recon_1793380748884.jpg" download="Day3-Slide1-Subdomain-Recon.jpg">⬇️ Download ပုံ (၁)</a>
+          </div>
+        </div>
+
+        <div class="slide-card">
+          <img src="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day3_slide2_app_debug_leak_1793380774692.jpg" alt="Day 3 Slide 2" />
+          <div class="slide-meta">
+            <div class="slide-label">ပုံ (၂) — APP_DEBUG=true & APP_ENV=local Leak</div>
+            <div class="slide-desc">Server File Path (/var/www/...) နဲ့ /docs/api ပွင့်နေသည့် အန္တရာယ်</div>
+            <a class="btn btn-download" href="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day3_slide2_app_debug_leak_1793380774692.jpg" download="Day3-Slide2-App-Debug-Leak.jpg">⬇️ Download ပုံ (၂)</a>
+          </div>
+        </div>
+
+        <div class="slide-card">
+          <img src="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day3_slide3_production_fix_1793380802174.jpg" alt="Day 3 Slide 3" />
+          <div class="slide-meta">
+            <div class="slide-label">ပုံ (၃) — Production Fix (403 Forbidden)</div>
+            <div class="slide-desc">APP_ENV=production နဲ့ APP_DEBUG=false ပြောင်းပြီး အပြီးပိတ်ပုံ</div>
+            <a class="btn btn-download" href="/home/webdev/.gemini/antigravity-cli/brain/a6ed99af-50b5-4213-9f52-e5c52e522dd2/day3_slide3_production_fix_1793380802174.jpg" download="Day3-Slide3-Production-Fix.jpg">⬇️ Download ပုံ (၃)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-box">
+        <div class="content-header">
+          <h3>📋 Day 003 TikTok Caption (မြန်မာလို အပြည့်အစုံ)</h3>
+          <button class="btn btn-copy" onclick="copyText('caption-day3', this)">📋 Copy Caption</button>
+        </div>
+        <pre id="caption-day3">🛡️ 100 Days of Cybersecurity & DevSecOps — Day 3/100 🚀
+
+Main Website (`www.example.com`) ကို လုံခြုံရေး အပြည့်ပိတ်ထားပေမယ့် ကုမ္ပဏီတော်တော်များများ ဘာလို့ Hack ခံနေရသေးလဲ သိလား? 🤯
+
+အဖြေကတော့ Developer တွေ စမ်းသပ်ဖို့ ဆောက်ထားပြီး မေ့ကျန်ခဲ့တဲ့ `dev.`, `staging.`, `dev-api.` ဆိုတဲ့ **Subdomains (Shadow IT)** တွေကြောင့်ပါပဲ!
+
+🔴 1. Hacker တွေ Hidden Subdomain ကို ဘယ်လိုရှာသလဲ? (ပုံ - ၁)
+မင်းက `dev-api.yourwebsite.com` ကို ဘယ်သူ့မှ မပြောဘဲ ဝှက်ထားတယ် ဆိုပေမယ့်...
+`certbot` နဲ့ HTTPS SSL တင်လိုက်တဲ့ စက္ကန့်မှာတင် အဲ့ဒီ Subdomain နာမည်က ကမ္ဘာ့ Public **Certificate Transparency (CT) Logs (`crt.sh`)** ပေါ်ကို အလိုအလျောက် ရောက်သွားပါတယ်!
+ဒါ့အပြင် DNS Enumeration script နဲ့ စက္ကန့်ပိုင်းအတွင်း အနောက်က Subdomain အားလုံးနဲ့ Server IP တွေကို ရှာတွေ့နိုင်ပါတယ်။
+
+⚠️ 2. အကြီးမားဆုံး အမှား — Public Dev Server မှာ `APP_DEBUG=true` ပွင့်နေခြင်း! (ပုံ - ၂)
+ဒီနေ့ ကိုယ်ပိုင် Server တွေကို Subdomain Hunter Python Script နဲ့ ပြန်စစ်ကြည့်တဲ့အခါ Main site တွေက လုံခြုံပေမယ့် Staging နဲ့ Dev Subdomain မှာ `APP_ENV=local` နဲ့ `APP_DEBUG=true` ပွင့်နေတာကို လက်ပူးလက်ကြပ် မိခဲ့ပါတယ်!
+ဘာအန္တရာယ်ရှိလဲဆိုတော့—
+❌ Error တမင်ဖြစ်အောင် `curl -X POST` နဲ့ ထိုးလိုက်တာနဲ့ Server ရဲ့ Folder Path အတိအကျ (`/var/www/...`) နဲ့ Code Stacktrace အကုန် ပြန်ပေါ်လာတယ်!
+❌ `APP_ENV=local` ဖြစ်နေတဲ့အတွက် `/docs/api` (API Documentation) ကြီးတစ်ခုလုံးက Login လုံးဝမလိုဘဲ အပြင်လူတိုင်း ဝင်ကြည့်လို့ ရနေတယ်!
+
+🔵 3. The Blue Team Fix (ပုံ - ၃)
+Internet ပေါ်ကနေ လှမ်းဝင်လို့ရတဲ့ ဘယ် Server မဆို (Staging/Dev ဖြစ်ပါစေ) `.env` မှာ မဖြစ်မနေ ဒီလို ပိတ်ရပါမယ်—
+✅ `APP_ENV=production`
+✅ `APP_DEBUG=false`
+✅ `php artisan config:clear`
+
+ပိတ်ပြီး ပြန်စမ်းလိုက်တဲ့အခါ Stacktrace လည်း လုံးဝ မပေါ်တော့သလို `/docs/api` ကလည်း `403 Forbidden` နဲ့ လုံခြုံသွားပါပြီ! (Error ကြည့်ချင်ရင် SSH ကနေ `tail -f storage/logs/laravel.log` နဲ့ပဲ ကြည့်ပါ!)
+
+မင်းတို့ရဲ့ Staging / Dev Server တွေမှာရော `APP_DEBUG=true` ပွင့်နေသေးလား? အခုပဲ စစ်ကြည့်လိုက်တော့နော်! 🔥
+
+#cybersecurity #devsecops #laravel #php #subdomain #bugbounty #linuxserver #myanmartech #100daysofcybersecurity #webdeveloper</pre>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function copyText(id, btn) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const old = btn.innerText;
+        btn.innerText = '✅ ကူးယူပြီးပါပြီ!';
+        setTimeout(() => btn.innerText = old, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

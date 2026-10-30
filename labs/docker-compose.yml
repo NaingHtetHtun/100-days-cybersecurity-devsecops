@@ -1,0 +1,18 @@
+services:
+  # 1. OWASP Juice Shop (Modern JS/Node/REST API Vulnerable Lab)
+  # URL: http://127.0.0.1:3000
+  juice-shop:
+    image: bkimminich/juice-shop:latest
+    container_name: sec-lab-juice-shop
+    ports:
+      - "127.0.0.1:3000:3000"
+    restart: unless-stopped
+
+  # 2. DVWA - Damn Vulnerable Web Application (PHP/MySQL Classic Web Vulnerabilities Lab)
+  # URL: http://127.0.0.1:4280 (Default login: admin / password)
+  dvwa:
+    image: vulnerables/web-dvwa:latest
+    container_name: sec-lab-dvwa
+    ports:
+      - "127.0.0.1:4280:80"
+    restart: unless-stopped
